@@ -1,0 +1,627 @@
+@import url(../libs/owl.carousel/owl.carousel.min.css);
+.data-slider {
+  padding-bottom: 86px; }
+  .data-slider .owl-carousel {
+    width: 1060px;
+    margin: 0 auto;
+    text-align: center; }
+    .data-slider .owl-carousel .owl-stage-outer {
+      width: 1060px;
+      margin: 0 auto;
+      z-index: 1; }
+    .data-slider .owl-carousel .owl-nav {
+      position: absolute;
+      top: 3px;
+      width: 100%; }
+    .data-slider .owl-carousel .owl-prev {
+      position: absolute;
+      left: -90px;
+      width: 40px;
+      height: 100px;
+      line-height: 100px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      border: 1px solid #c6c6c6;
+      -webkit-border-radius: 4px 0 0 4px;
+      border-radius: 4px 0 0 4px;
+      -webkit-transition: all 700ms;
+      transition: all 700ms; }
+      .data-slider .owl-carousel .owl-prev:before {
+        content: "\f104";
+        font-family: FontAwesome;
+        color: #c6c6c6;
+        font-size: 30px; }
+      .data-slider .owl-carousel .owl-prev:hover {
+        border-color: #f03; }
+        .data-slider .owl-carousel .owl-prev:hover:before {
+          color: #f03; }
+    .data-slider .owl-carousel .owl-next {
+      position: absolute;
+      right: -94px;
+      width: 40px;
+      height: 100px;
+      line-height: 100px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      border: 1px solid #c6c6c6;
+      -webkit-border-radius: 0 4px 4px 0;
+      border-radius: 0 4px 4px 0;
+      -webkit-transition: all 700ms;
+      transition: all 700ms; }
+      .data-slider .owl-carousel .owl-next:before {
+        content: "\f105";
+        font-family: FontAwesome;
+        color: #c6c6c6;
+        font-size: 30px; }
+      .data-slider .owl-carousel .owl-next:hover {
+        border-color: #f03; }
+        .data-slider .owl-carousel .owl-next:hover:before {
+          color: #f03; }
+  .data-slider .item {
+    width: 120px;
+    margin: 0 auto;
+    height: 100px;
+    padding-top: 9px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block; }
+    .data-slider .item .week-day {
+      border: 1px solid transparent;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      font-size: 32px;
+      line-height: 32px;
+      padding: 13px;
+      color: #000000;
+      display: block; }
+    .data-slider .item .week-date {
+      color: #d4d7da;
+      display: block;
+      white-space: nowrap;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 4px 0 7px; }
+    .data-slider .item:hover {
+      background-color: #f2f2f2; }
+      .data-slider .item:hover .week-date,
+      .data-slider .item:hover .week-day {
+        color: #000000; }
+    .data-slider .item.active .week-day {
+      color: #ff0030;
+      border: 1px solid #ff0030;
+      width: 65px;
+      margin: 0 auto;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 13px 0; }
+
+.programm .filter {
+  margin-bottom: 48px;
+  text-align: center; }
+  .programm .filter a {
+    display: inline-block;
+    padding: 0 33px;
+    font-family: "OnePlusOne2015-Light",sans-serif;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease; }
+    .programm .filter a.active, .programm .filter a:hover {
+      color: #f03; }
+
+.programm .item {
+  margin-bottom: 40px; }
+  .programm .item .premiere, .programm .item .online {
+    display: none; }
+  .programm .item.active .short {
+    display: none; }
+  .programm .item.active .full {
+    display: block; }
+  .programm .item.online .programm-time {
+    margin-top: 30px; }
+    .programm .item.online .programm-time .online {
+      display: block;
+      background: #ff1824;
+      color: #ffffff;
+      text-align: center;
+      width: 120px;
+      height: 25px;
+      line-height: 25px;
+      margin: 0 auto 5px; }
+    .programm .item.online .programm-time .time {
+      color: #ff0030; }
+  .programm .item.online .programm-description a.title {
+    font-family: "OnePlusOne2015-Heavy",sans-serif; }
+  .programm .item.premiere .programm-time {
+    margin-top: 21px; }
+    .programm .item.premiere .programm-time .premiere {
+      display: block;
+      background: #ff9000;
+      color: #ffffff;
+      text-align: center;
+      width: 85px;
+      height: 25px;
+      line-height: 25px;
+      margin: 0 auto 5px; }
+  .programm .item.premiere .online {
+    display: none; }
+
+.programm .programm-time {
+  display: inline-block;
+  vertical-align: top;
+  margin: 55px 94px 0 0; }
+  .programm .programm-time .time {
+    font-size: 49px;
+    letter-spacing: 1px;
+    font-family: "OnePlusOne2015-Heavy",sans-serif;
+    text-align: left;
+    padding-top: 5px;
+    line-height: 40px; }
+
+.programm .programm-img {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  width: 185px;
+  height: 140px;
+  position: relative;
+  margin-right: 24px; }
+  .programm .programm-img:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-shadow: inset 0 0 0 3px transparent;
+    box-shadow: inset 0 0 0 3px transparent;
+    z-index: 2; }
+  .programm .programm-img img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    object-position: 50%; }
+  .programm .programm-img:hover:before {
+    -webkit-box-shadow: inset 0 0 0 3px #f03;
+    box-shadow: inset 0 0 0 3px #f03; }
+
+.programm .programm-description {
+  display: inline-block;
+  vertical-align: top;
+  width: 777px; }
+  .programm .programm-description a.title {
+    display: block;
+    margin: 8px 0 7px 0;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    text-transform: uppercase; }
+    .programm .programm-description a.title:hover {
+      color: #ff0033; }
+  .programm .programm-description p.text {
+    color: #000;
+    font-size: 18px;
+    line-height: 23px;
+    font-family: "OnePlusOne2015-Regular", sans-serif;
+    margin: 10px 0 0 0; }
+  .programm .programm-description .tag a {
+    margin-right: 13px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 0 15px;
+    line-height: 23px;
+    border: 1px solid #f03;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    color: #f03;
+    position: relative; }
+    .programm .programm-description .tag a:hover {
+      background: #ff0033;
+      color: #ffffff; }
+    .programm .programm-description .tag a.on-line {
+      padding-left: 32px;
+      position: relative; }
+      .programm .programm-description .tag a.on-line:before {
+        content: '.';
+        position: absolute;
+        top: 7px;
+        left: 16px;
+        background: #ff0030;
+        width: 10px;
+        height: 10px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%; }
+      .programm .programm-description .tag a.on-line:hover:before {
+        background: #ffffff; }
+
+.programm .rkm {
+  margin-bottom: 33px; }
+
+.programm .short {
+  width: 1232px;
+  margin: 0 auto; }
+
+.programm .full {
+  display: none;
+  max-width: 1405px;
+  width: 100%;
+  height: 380px;
+  background-color: #000000;
+  position: relative;
+  overflow: hidden; }
+  .programm .full .block-nav, .programm .full .block-video, .programm .full .block-description {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    float: left; }
+  .programm .full .block-nav {
+    width: 324px;
+    text-align: center; }
+    .programm .full .block-nav .week {
+      font-size: 28px;
+      line-height: 36px;
+      padding: 32px 0 12px;
+      color: #8d8d8d; }
+    .programm .full .block-nav .day {
+      font-size: 17px;
+      line-height: 20px;
+      display: block;
+      white-space: nowrap;
+      padding: 0 0 14px;
+      color: #8d8d8d; }
+    .programm .full .block-nav .up, .programm .full .block-nav .down {
+      width: 164px;
+      height: 39px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      display: inline-block;
+      vertical-align: top;
+      border: 1px solid #727272;
+      position: relative;
+      background: transparent; }
+      .programm .full .block-nav .up i, .programm .full .block-nav .down i {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 40px;
+        line-height: 30px;
+        font-weight: 100; }
+      .programm .full .block-nav .up:hover, .programm .full .block-nav .down:hover {
+        border-color: #fff; }
+        .programm .full .block-nav .up:hover i, .programm .full .block-nav .down:hover i {
+          color: #ffffff; }
+    .programm .full .block-nav .time {
+      font-family: "OnePlusOne2015-Heavy",sans-serif;
+      font-size: 50px;
+      line-height: 50px;
+      color: #fff;
+      padding: 11px 0 12px;
+      letter-spacing: 1px; }
+  .programm .full .block-video {
+    width: 450px; }
+    .programm .full .block-video iframe {
+      width: 100%;
+      height: 100%; }
+  .programm .full .block-description {
+    width: 630px;
+    padding: 22px 78px 28px 22px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .programm .full .block-description .title {
+      font-size: 30px;
+      font-family: "OnePlusOne2015-Heavy",sans-serif;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 35px;
+      margin-bottom: 6px; }
+    .programm .full .block-description .season {
+      font-size: 16px;
+      color: #fff;
+      font-family: "OnePlusOne2015-Heavy",sans-serif;
+      text-transform: uppercase;
+      padding-bottom: 8px;
+      letter-spacing: 0.3px; }
+    .programm .full .block-description .link a {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 35px;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: none;
+      font-family: "OnePlusOne Regular",sans-serif;
+      color: #12AAEB;
+      letter-spacing: 1.5px; }
+      .programm .full .block-description .link a:hover {
+        text-decoration: underline; }
+    .programm .full .block-description p.text {
+      color: #fff;
+      line-height: 25px;
+      font-size: 16px;
+      letter-spacing: 1.1px; }
+    .programm .full .block-description .tag {
+      margin-top: 15px; }
+      .programm .full .block-description .tag a {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 11px 26px 0;
+        border: 1px solid rgba(142, 142, 142, 0.8);
+        color: #8e8e8e;
+        font-family: "OnePlusOne2015-LightItalic", sans-serif;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        padding: 0 15px;
+        font-size: 14px;
+        letter-spacing: 1.5px; }
+        .programm .full .block-description .tag a:hover {
+          color: #ff0033;
+          border-color: #f03; }
+
+.programm .button-close {
+  padding: 9px 10px;
+  font-size: 20px;
+  line-height: 15px;
+  position: absolute;
+  right: 79px;
+  top: 25px;
+  display: block;
+  float: left;
+  border: 1px solid #727272;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "OnePlusOne2015-Light",sans-serif;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+  .programm .button-close:hover {
+    border-color: #fff; }
+
+.popular-today {
+  margin-top: 40px;
+  background: #ffffff;
+  text-align: center; }
+  .popular-today .popular-title {
+    font-family: "OnePlusOne2015-Heavy",sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 42px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    padding: 75px 0 18px 0; }
+  .popular-today .item {
+    display: inline-block;
+    vertical-align: top;
+    width: 340px;
+    margin: 20px;
+    overflow: hidden;
+    -webkit-transition: all 700ms;
+    transition: all 700ms;
+    text-align: left; }
+    .popular-today .item .img {
+      overflow: hidden;
+      display: block; }
+      .popular-today .item .img:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-box-shadow: inset 0 0 0 3px transparent;
+        box-shadow: inset 0 0 0 3px transparent;
+        z-index: 2; }
+    .popular-today .item .top {
+      position: relative; }
+      .popular-today .item .top .white {
+        position: absolute;
+        left: 0;
+        bottom: 54px;
+        z-index: 2;
+        background: #ffffff;
+        color: #000;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 6px 25px 3px 12px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+        .popular-today .item .top .white:hover {
+          background-color: #ff9000;
+          color: #ffffff; }
+      .popular-today .item .top .red {
+        position: absolute;
+        left: 0;
+        bottom: 25px;
+        z-index: 2;
+        background-color: #f03;
+        padding: 0px 12px 0px 15px;
+        font-family: "OnePlusOne Regular",sans-serif;
+        color: #fff;
+        line-height: 30px;
+        font-size: 14px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+        .popular-today .item .top .red:hover {
+          text-decoration: underline; }
+      .popular-today .item .top:hover .img:before {
+        -webkit-box-shadow: inset 0 0 0 3px #f03;
+        box-shadow: inset 0 0 0 3px #f03; }
+      .popular-today .item .top:hover .white {
+        -webkit-box-shadow: inset 3px 0px 0px 0px #f03;
+        box-shadow: inset 3px 0px 0px 0px #f03; }
+    .popular-today .item .bottom {
+      padding-bottom: 26px; }
+      .popular-today .item .bottom .title {
+        padding: 14px 0px 19px 0;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000;
+        display: block;
+        height: 40px; }
+      .popular-today .item .bottom .text {
+        max-height: 60px;
+        overflow-y: hidden;
+        margin-bottom: 35px;
+        font-size: 18px;
+        line-height: 20px;
+        color: #8e8e8e; }
+      .popular-today .item .bottom:hover .title {
+        color: #f03; }
+  .popular-today .long .img {
+    height: 680px; }
+  .popular-today .small .top, .popular-today .small .img {
+    height: 340px; }
+  .popular-today img {
+    height: 100%; }
+
+footer {
+  background: #000000;
+  text-align: center;
+  padding: 46px 0 64px 0; }
+  footer a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 20px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 140%;
+    font-family: "OnePlusOne2015-Regular",sans-serif;
+    border-left: 1px solid #fff; }
+    footer a:first-of-type {
+      border: none; }
+  footer .top a {
+    color: transparent;
+    border: none;
+    margin: 0 65px;
+    padding: 0; }
+    footer .top a.tcn {
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/logos.svg) no-repeat -2px 0;
+      width: 100px;
+      height: 44px;
+      background-size: 272px; }
+    footer .top a.plus {
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/logos.svg) no-repeat -227px -152px;
+      width: 91px;
+      height: 47px;
+      background-size: 320px; }
+    footer .top a.two {
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/logos.svg) no-repeat -3px -112px;
+      width: 101px;
+      height: 31px;
+      background-size: 260px; }
+    footer .top a.tet {
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/logos.svg) no-repeat -3px -54px;
+      width: 105px;
+      height: 43px;
+      background-size: 263px; }
+    footer .top a.one {
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/logos.svg) no-repeat -190px 7px;
+      width: 95px;
+      height: 56px;
+      background-size: 285px; }
+    footer .top a.bigoody {
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/logos.svg) no-repeat -156px -40px;
+      width: 81px;
+      height: 67px;
+      background-size: 238px; }
+    footer .top a.unian {
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/logos.svg) no-repeat -157px -171px;
+      width: 90px;
+      height: 57px;
+      background-size: 248px; }
+    footer .top a.ovva {
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/logos.svg) no-repeat -5px -245px;
+      width: 120px;
+      height: 45px;
+      background-size: 310px; }
+  footer .bottom {
+    padding: 58px 0 0 0; }
+  footer .copyright {
+    color: #727272;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 10px 0; }
+
+/* ============================ font-awesome =========================== */
+.fa-warning:before, .fa-exclamation-triangle:before {
+  content: "\f071";
+  font-family: FontAwesome; }
+
+.fa-check:before {
+  content: "\f00c";
+  font-family: FontAwesome; }
+
+.fa-envelope:before {
+  content: "\f0e0";
+  font-family: FontAwesome; }
+
+.fa-phone:before {
+  content: "\f095";
+  font-family: FontAwesome; }
+
+.fa-instagram:before {
+  content: "\f16d";
+  font-family: FontAwesome; }
+
+.fa-facebook:before {
+  content: "\f09a";
+  font-family: FontAwesome; }
+
+.fa-vk:before {
+  content: "\f189";
+  font-family: FontAwesome; }
+
+.fa-search:before {
+  content: "\f002";
+  font-family: FontAwesome; }
+
+.fa-user-circle:before {
+  content: "\f2bd";
+  font-family: FontAwesome; }
+
+.fa-map-marker:before {
+  content: "\f041";
+  font-family: FontAwesome; }
+
+.fa-angle-left:before {
+  content: "\f104";
+  font-family: FontAwesome; }
+
+.fa-angle-right:before {
+  content: "\f105";
+  font-family: FontAwesome; }
+
+.fa-angle-up:before {
+  content: "\f106";
+  font-family: FontAwesome; }
+
+.fa-angle-down:before {
+  content: "\f107";
+  font-family: FontAwesome; }
